@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+}
+
+.Detail{
+  display: flex;
+  flex-direction: column;
+  background: pink;
+}
+
+.Body {
+  background-color: rgb(118, 223, 179);
+  min-height: 1080px;
+}
+
+.table {
+  border-collapse:collapse;
+  max-width: "900px";
+  width: 100%;
+  margin: 2rem auto;
+  table-layout: auto;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table th, td {
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ddd;
+}
+
+.reg {
+  padding-left: 400px;
+}
+
+.FormLabel {
+  display: flex;
+}

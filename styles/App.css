@@ -1,0 +1,87 @@
+.Details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: brown;
+    border: 2px solid black;
+    margin-left: 350px;
+    width: 1000px;
+}
+/* .Form{
+    border: 2px solid red;
+} */
+.button {
+    background:blue;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 26px;
+    padding: 14px;
+
+}
+.Admin {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: center;
+}
+.NextRound {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin-right: 10px;
+}
+
+.butt {
+    display: flex;
+    padding: 50px;
+}
+.Schedule {
+    display: flex;
+    margin-left: 1000px ;
+    justify-content: center;
+}
+.Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: x-large;
+    border: 2px solid red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.info {
+    text-align: center;
+}
+.Jobcard {
+    padding: 2px;
+    margin: 2px;
+    flex-direction: row;
+    display: flex;
+    border: 2px solid black;
+
+}
+.Filter {
+    display: flex;
+    margin-left: 1750px;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+}
+.JobD{
+    display: flex;
+}
+.heading {
+    text-align: center;
+    border: 2px solid red;
+}
