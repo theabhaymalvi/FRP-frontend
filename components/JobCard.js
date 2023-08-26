@@ -16,7 +16,7 @@ const JobCard = ({job}) => {
     let spez = spezs.filter(item => item.id === job.spez_Req);
     async function deleteJob(jwt,id) {
       const response = await fetch(
-          "https://recruitsys.herokuapp.com/deleteJob?" +
+          "https://frp-964d.onrender.com/deleteJob?" +
             new URLSearchParams({
               id: id,
               jwt: jwt,

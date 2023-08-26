@@ -21,7 +21,7 @@ const Application = () => {
   const [flag,setFlag] = useState(false);
   async function nextRound(jwt,id) {
     const response = await fetch(
-        "https://recruitsys.herokuapp.com/nextRound?" +
+        "https://frp-964d.onrender.com/nextRound?" +
           new URLSearchParams({
             jwt: jwt
           }),
@@ -48,7 +48,7 @@ const Application = () => {
     console.log(datetime);
 
     const response = await fetch(
-        "https://recruitsys.herokuapp.com/schedule?" +
+        "https://frp-964d.onrender.com/schedule?" +
           new URLSearchParams({
             jwt: jwt
           }),
@@ -73,7 +73,7 @@ const Application = () => {
 
   async function sendMail(jwt,id, meet) {
     const response = await fetch(
-        "https://recruitsys.herokuapp.com/sendMail?" +
+        "https://frp-964d.onrender.com/sendMail?" +
           new URLSearchParams({
             jwt: jwt
           }),
