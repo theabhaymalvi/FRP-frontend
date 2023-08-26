@@ -31,7 +31,7 @@ export const AuthProvider = ({children}) =>{
     let loginUser = async (e) => {
         console.log('Form Submitted')
         e.preventDefault()
-        let response = await fetch("https://recruitsys.herokuapp.com/login", {
+        let response = await fetch("https://frp-964d.onrender.com/login", {
             method: 'POST',
             headers:{
                 'Content-Type' : 'application/json',
@@ -57,7 +57,7 @@ export const AuthProvider = ({children}) =>{
     }
     let preReq = async() => {
       const resp2 = await fetch(
-        "https://recruitsys.herokuapp.com/fetchAllJobs",
+        "https://frp-964d.onrender.com/fetchAllJobs",
         {
           method: "GET",
         }
@@ -67,7 +67,7 @@ export const AuthProvider = ({children}) =>{
       setJobs(data2);
 
       const resp3 = await fetch(
-        "https://recruitsys.herokuapp.com/fetchAllSpez",
+        "https://frp-964d.onrender.com/fetchAllSpez",
         {
           method: "GET",
         }
@@ -91,7 +91,7 @@ export const AuthProvider = ({children}) =>{
         const data = Object.fromEntries(formData.entries());
         Object.assign(data, {job: jobid, meet: 'https://meet.google.com/bos-etyf-oea'});
         console.log(data);
-        let response = await fetch("https://recruitsys.herokuapp.com/registerApp", {
+        let response = await fetch("https://frp-964d.onrender.com/registerApp", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -118,7 +118,7 @@ export const AuthProvider = ({children}) =>{
           const data = Object.fromEntries(formData.entries());
           Object.assign(data,{createdby: "dofa"});
           console.log(data);
-          let response = await fetch("https://recruitsys.herokuapp.com/createJob?"+new URLSearchParams({ jwt: authToken }), {
+          let response = await fetch("https://frp-964d.onrender.com/createJob?"+new URLSearchParams({ jwt: authToken }), {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

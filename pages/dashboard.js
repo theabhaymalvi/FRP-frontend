@@ -44,7 +44,7 @@ function Dashboard() {
         } else {
           (async () => {
             const resp1 = await fetch(
-              "https://recruitsys.herokuapp.com/getDetails?" +
+              "https://frp-964d.onrender.com/getDetails?" +
                 new URLSearchParams({ jwt: Jwt }),
               {
                 method: "GET",

@@ -12,7 +12,7 @@ const Admin = () => {
 
   let addPost = async(e) => {
     e.preventDefault();
-    let resp = await fetch("https://recruitsys.herokuapp.com/addPost?"+new URLSearchParams({ jwt: Jwt }), {
+    let resp = await fetch("https://frp-964d.onrender.com/addPost?"+new URLSearchParams({ jwt: Jwt }), {
             method: 'POST',
             headers:{
                 'Content-Type' : 'application/json',
@@ -24,7 +24,7 @@ const Admin = () => {
     console.log(data);
     if(resp.status === 200) {
       const resp = await fetch(
-        "https://recruitsys.herokuapp.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
+        "https://frp-964d.onrender.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
         {
           method: "GET",
         }
@@ -39,7 +39,7 @@ const Admin = () => {
 
   let delPost = async(e) => {
     e.preventDefault();
-    let resp = await fetch("https://recruitsys.herokuapp.com/deletePost?"+new URLSearchParams({ jwt: Jwt }), {
+    let resp = await fetch("https://frp-964d.onrender.com/deletePost?"+new URLSearchParams({ jwt: Jwt }), {
             method: 'POST',
             headers:{
                 'Content-Type' : 'application/json',
@@ -51,7 +51,7 @@ const Admin = () => {
     console.log(data);
     if(resp.status === 200) {
       const resp = await fetch(
-        "https://recruitsys.herokuapp.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
+        "https://frp-964d.onrender.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
         {
           method: "GET",
         }
@@ -179,7 +179,7 @@ const Admin = () => {
     } else {
       (async() => {
         const resp = await fetch(
-          "https://recruitsys.herokuapp.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
+          "https://frp-964d.onrender.com/getPosts?"+new URLSearchParams({ jwt: Jwt }),
           {
             method: "GET",
           }

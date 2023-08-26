@@ -30,7 +30,7 @@ const EditDetails = () => {
     if(k.mob_num.value) app.mob_num = k.mob_num.value;
     console.log(app);
     let response = await fetch(
-      "https://recruitsys.herokuapp.com/updateApp?" +
+      "https://frp-964d.onrender.com/updateApp?" +
         new URLSearchParams({ jwt: Jwt }),
       {
         method: "POST",
@@ -273,7 +273,7 @@ const EditDetails = () => {
     } else {
       (async () => {
         const resp1 = await fetch(
-          "https://recruitsys.herokuapp.com/getDetails?" +
+          "https://frp-964d.onrender.com/getDetails?" +
             new URLSearchParams({ jwt: Jwt }),
           {
             method: "GET",
